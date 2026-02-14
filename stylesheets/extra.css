@@ -1,0 +1,10 @@
+/* docs/stylesheets/extra.css - ciąg dalszy */
+
+/* Wymuszenie pełnej szerokości (Full Width) */
+.md-grid {
+    max-width: 86% !important; /* Użyj 86% szerokości ekranu zamiast sztywnej wartości */
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
