@@ -14,3 +14,5 @@ The minimum distance occurs when the derivative of the squared distance function
 $$f(t) = (t-3)^2 + (5t-6)^2 \implies f'(t) = 52t - 66$$
 * **Time of closest approach:** $t \approx 1.27 \text{ s}$
 * **Minimum Distance:** $D \approx 1.74 \text{ units}$
+
+![alt text](image-1.png)
