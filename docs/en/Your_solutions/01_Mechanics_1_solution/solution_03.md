@@ -1,4 +1,4 @@
-## Section 12: Kinematic Path Analysis
+## Section 3: Kinematic Path Analysis
 
 **Alice:** $A(t) = (2+t, 8-3t)$  
 **Bob:** $B(t) = (2t-1, 2t+2)$
