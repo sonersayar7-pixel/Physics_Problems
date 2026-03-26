@@ -1,87 +1,90 @@
-# Section 3: Waves
+# Section 3: Waves - Solutions
 
 ## 1. Wave Properties
+The relationship between speed ($v$), frequency ($f$), and wavelength ($\lambda$) is given by $v = f\lambda$.
+* **In Air:**
+  $$\lambda_{air} = \frac{v_{air}}{f} = \frac{343 \text{ m/s}}{440 \text{ Hz}} \approx 0.78 \text{ m}$$
+* **In Water:**
+  $$\lambda_{water} = \frac{v_{water}}{f} = \frac{1482 \text{ m/s}}{440 \text{ Hz}} \approx 3.37 \text{ m}$$
 
-A sound wave in air has a frequency of 440 Hz. If the speed of sound in air is 343 m/s, what is its wavelength? What is its wavelength in water, where the speed of sound is 1482 m/s?
+---
 
 ## 2. String Harmonics
+For the fundamental frequency ($n=1$) of a string fixed at both ends, the length $L$ is half a wavelength: $L = \lambda/2 \implies \lambda = 2L$.
 
-A guitar string is 64 cm long and has a fundamental frequency (one antinode) of 330 Hz. What is the speed of the wave on this string?
+$$L = 64 \text{ cm} = 0.64 \text{ m} \implies \lambda = 1.28 \text{ m}$$
+$$v = f\lambda = 330 \text{ Hz} \times 1.28 \text{ m} = 422.4 \text{ m/s}$$
+
+---
 
 ## 3. Superposition Principle
+Using the trigonometric identity $\sin(A) + \sin(B) = 2 \sin(\frac{A+B}{2}) \cos(\frac{A-B}{2})$:
+$$y_{res} = A[\sin(kx - \omega t) + \sin(kx + \omega t)] = 2A \sin(kx) \cos(\omega t)$$
+* **Nodes:** Occur where the spatial part is zero: $\sin(kx) = 0$.
+  $$kx = n\pi \implies x = \frac{n\pi}{k} = \frac{n\lambda}{2} \quad \text{for } n = 0, 1, 2, \dots$$
 
-Two waves are described by the equations $y_1(x, t) = A \sin(kx - \omega t)$ and $y_2(x, t) = A \sin(kx + \omega t)$. What is the equation of the resulting standing wave? Identify the positions of the nodes.
+---
 
 ## 4. Phase Difference
+The phase difference $\Delta \phi$ is related to path difference $\Delta x$ by $\Delta \phi = \frac{2\pi}{\lambda} \Delta x$.
+$$\Delta \phi = \frac{2\pi}{\lambda} \left( \frac{\lambda}{3} \right) = \frac{2\pi}{3} \text{ radians (or } 120^\circ)$$
 
-What is the phase difference in radians between two points on a wave that are separated by a distance of $\lambda/3$? 
+---
 
 ## 5. Echo Ranging
+The sound travels to the cliff and back, covering a distance of $2d$ in time $t$.
+$$2d = v \cdot t \implies d = \frac{343 \text{ m/s} \times 1 \text{ s}}{2} = 171.5 \text{ m}$$
 
-A person shouts towards a cliff and hears the echo 1 seconds later. How far away is the cliff? (Speed of sound in air is 343 m/s).
+---
 
 ## 6. Wave Equation
+$y(x,t) = 0.05 \sin(2\pi x - 50\pi t)$. Compare to $y = A \sin(kx - \omega t)$:
+* **a) Amplitude:** $A = 0.05 \text{ m}$.
+* **b) Wavelength:** $k = 2\pi \implies \frac{2\pi}{\lambda} = 2\pi \implies \lambda = 1 \text{ m}$.
+* **c) Frequency:** $\omega = 50\pi \implies 2\pi f = 50\pi \implies f = 25 \text{ Hz}$.
+* **d) Wave Speed:** $v = f\lambda = 25 \times 1 = 25 \text{ m/s}$ (or $v = \omega/k$).
 
-A wave is described by the equation $y(x,t) = 0.05 \sin(2\pi x - 50\pi t)$, where x and y are in meters and t is in seconds. Determine the waves':
-
-a) Amplitude $A$.
-
-b) Wavelength $\lambda$.
-
-c) Frequency $f$.
-
-d) Wave speed $v$.
+---
 
 ## 7. Standing Wave Modes
+For a string of length $L$, the wavelength of the $n$-th harmonic (where $n$ is the number of antinodes) is $\lambda_n = \frac{2L}{n}$.
 
-A standing wave with four antinodes is produced on a string of length L = 80 cm. What is the wavelength of this wave?
+$$\lambda = \frac{2 \times 80 \text{ cm}}{4} = 40 \text{ cm} = 0.4 \text{ m}$$
 
-## 8. Waves
+---
 
-Which of the following functions can describe a traveling wave? Hint: check if it satisfies the wave equation 
+## 8. Traveling Wave Functions
+A function $f(x,t)$ describes a traveling wave if it is of the form $f(x \pm vt)$.
+* **a) $A \cos(kx^2 - \omega t)$:** No. The $x^2$ term prevents it from being in the form $(x-vt)$.
+* **b) $A(x-vt)^2$:** **Yes.** It is a function of $(x-vt)$ and satisfies the wave equation.
+* **c) $A \log(x+vt)$:** **Yes.** It is a function of $(x+vt)$ and satisfies the wave equation.
 
-$$\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}$$
+---
 
-a) $y(x,t) = A \cos(kx^2 - \omega t)$
+## 9. Damped Oscillator
+The equation is $m \ddot{x} + b \dot{x} + kx = 0$. Let $\gamma = \frac{b}{2m}$ and $\omega_0 = \sqrt{\frac{k}{m}}$.
 
-b) $y(x,t) = A(x-vt)^2$
+1. **General Solution:** $x(t) = e^{-\gamma t}(C_1 e^{\sqrt{\gamma^2 - \omega_0^2}t} + C_2 e^{-\sqrt{\gamma^2 - \omega_0^2}t})$.
+2. **Classification:**
+   * **Underdamped ($\gamma < \omega_0$):** Oscillates with decaying amplitude.
+   * **Critically Damped ($\gamma = \omega_0$):** Returns to equilibrium fastest without oscillation.
+   * **Overdamped ($\gamma > \omega_0$):** Returns to equilibrium slowly without oscillation.
 
-c) $y(x,t) = A \log(x+vt)$
-
-## 9. Damped oscillator
-
-For the given equation describing a damped harmonic oscillator:
-
-$$
-m \frac{d^2 x}{dt^2} + b \frac{dx}{dt} + k x = 0
-$$
-
-make interactive HTML animation with a slider for the parameter $b$ to show the behavior of the system in the underdamped, critically damped, and overdamped cases. Include graphs of $x(t)$ and the phase portrait for each case.
-
-1. Write down the general solution.
-2. Present the classification of cases: underdamped, critically damped, overdamped.
-3. Solve the equation numerically (RK4).
-4. Investigate the effect of parameter $b$.
-5. Generate the graph of $x(t)$.
-6. Generate the phase portrait.
+---
 
 ## 10. Animation: Wave Sources
+The intensity of the wave follows an inverse power law $1/r^\alpha$.
+* If $\alpha = 0$: Plane waves (no attenuation).
+* If $\alpha = 0.5$: Cylindrical waves.
+* If $\alpha = 1.0$: Spherical waves (standard 3D point source).
+The resultant displacement at any point $\vec{r}$ is:
+$$U_{total}(\vec{r},t) = \sum_{i} \frac{A}{|\vec{r}-\vec{r_i}|^\alpha} \sin(k |\vec{r} - \vec{r_i}| - \omega t)$$
 
-Write an HTML animation in which it is possible to place dots that will serve as sources of waves described by the equation:
-
-$$
-u(\vec{r},t) = \frac{A}{|\vec{r}-\vec{r_0}|^\alpha} \sin(k |\vec{r} - \vec{r_0}| - \omega t)
-$$
-
-where $\vec{r_0}$ is the position of the dot, and $\alpha$ is a parameter that can be set within the range $[0, 2]$. The animation should show the superposition of waves from all dots.
-
+---
 
 ## 11. Animation: Two-Slit Interference
+The interference pattern is governed by the path difference $\Delta r = |\vec{r}-\vec{r_1}| - |\vec{r}-\vec{r_2}|$.
 
-Write an HTML animation simulating Young's experiment, in which two slits act as point sources of coherent waves. The displacement of the resultant wave is the sum of partial waves described by the formula:
-
-$$
-u(\vec{r},t) = \frac{A}{|\vec{r}-\vec{r_1}|} \sin(k |\vec{r} - \vec{r_1}| - \omega t) + \frac{A}{|\vec{r}-\vec{r_2}|} \sin(k |\vec{r} - \vec{r_2}| - \omega t)
-$$
-
-where $\vec{r_1}$ and $\vec{r_2}$ are the position vectors of the slits. The user should be able to change the distance between the slits $d = |\vec{r_1} - \vec{r_2}|$ and the wavelength $\lambda$. The animation should visualize the resulting interference pattern in real time.
+* **Constructive interference:** $\Delta r = n\lambda$.
+* **Destructive interference:** $\Delta r = (n + \frac{1}{2})\lambda$.
+Increasing $d$ (slit distance) results in closer interference fringes, while increasing $\lambda$ (wavelength) spreads the fringes further apart.
