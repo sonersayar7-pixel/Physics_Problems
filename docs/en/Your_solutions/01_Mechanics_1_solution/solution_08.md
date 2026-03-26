@@ -1,4 +1,4 @@
-## Section 11.8: Centripetal Acceleration at the Equator
+## Section 8: Centripetal Acceleration at the Equator
 
 **Given:**
 * $R = 6,378,000 \text{ m}$
