@@ -1,4 +1,4 @@
-## Section 9.2: Range Optimization Analysis
+## Section 2: Range Optimization Analysis
 
 To analytically prove that the maximum horizontal range is achieved at a launch angle of $45^\circ$, we must find the extreme value of the range function $R(\theta)$ by evaluating its derivative with respect to $\theta$.
 
