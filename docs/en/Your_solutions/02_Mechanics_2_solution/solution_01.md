@@ -51,5 +51,4 @@ $$T_M \approx 2.449 \cdot 4 \approx 9.796$$
 
 **Conclusion:** The period of the pendulum on the Moon would be approximately **9.8 seconds**. Because gravity is weaker, the pendulum swings much slower.
 
-
-![alt text](image-1.png)
+![alt text](image-4.png)
