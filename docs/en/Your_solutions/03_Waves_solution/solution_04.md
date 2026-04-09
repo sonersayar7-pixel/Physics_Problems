@@ -30,3 +30,5 @@ To convert this to degrees, we know that $2\pi$ radians equals **360°**, so one
 
 ### Conclusion for Presentation
 A physical path difference of exactly $\frac{\lambda}{3}$ results in an angular phase difference of **$\frac{2\pi}{3}$ radians** (or **120°**). Physically, this means the two waves arrive exactly one-third of a cycle out of sync with each other.
+
+![alt text](image-1.png)
