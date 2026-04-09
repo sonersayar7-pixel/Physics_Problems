@@ -2,11 +2,6 @@
 
 In a classic two-slit interference setup (famous from Young's Double-Slit Experiment), a wave passes through two narrow openings, effectively creating two new, perfectly synchronized wave sources side-by-side. As these two waves overlap on their way to a screen, they interact to create a distinct, alternating pattern of high intensity (bright bands) and zero intensity (dark bands) known as **fringes**.
 
-
-
-[Image of Young's double slit interference pattern diagram]
-
-
 ### Step 1: Understanding Path Difference ($\Delta r$)
 The entire interference pattern is driven by one simple concept: the **path difference**. Because the two slits are at different physical locations, the waves traveling from them must cover different distances to reach the exact same point ($\vec{r}$) on the observation screen.
 
