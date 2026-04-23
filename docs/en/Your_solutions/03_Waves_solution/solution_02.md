@@ -42,3 +42,4 @@ $$v = 422.4 \text{ m/s}$$
 
 ### Conclusion for Presentation
 The wave travels along this specific string at a speed of **422.4 m/s**. This speed is determined by the physical properties of the string itself (such as its tension and mass), which in turn dictates that a string of this length will ring out at exactly **330 Hz** when plucked.
+![alt text](image-2.png)
