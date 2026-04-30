@@ -30,3 +30,4 @@ $$\sum F_x = 4k \cos(45^\circ) - 4k \cos(45^\circ) - 4k \cos(45^\circ) + 4k \cos
 $$\sum F_y = 4k \sin(45^\circ) + 4k \sin(45^\circ) - 4k \sin(45^\circ) - 4k \sin(45^\circ) = 0$$
 
 **Net Force:** $\mathbf{0\text{ N}}$
+![alt text](image.png)
