@@ -1,4 +1,4 @@
-### Step-by-Step Solution
+### Solution 1
 
 **Given:** * $R_1 = 15\,\Omega$
 * $R_2 = 30\,\Omega$
